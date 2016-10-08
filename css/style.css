@@ -1,0 +1,72 @@
+html, body {
+  background-color: #222;
+  font-family: "Helvetica", san-serif;
+  color: #fff;
+  margin: 0;
+}
+
+.menu-window {
+  width: 400px;
+  height: 100%;
+  /*background-color: #000;*/
+  background-image: url(http://i.imgur.com/b5E3Chb.jpg);
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+}
+
+.menu-overlay {
+  width: 400px;
+  height: 100%;
+  background-color: rgba(0, 200, 200, 0.25);
+  filter: opacity(50%);
+  position: fixed;
+}
+
+.menu {
+  background-color: rgba(0, 0, 0, .7);
+  opacity: .5;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  list-style: none;
+  text-align: center;
+  padding: 60px;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+.menu:hover {
+    opacity: 1;
+}
+
+.nav-item {
+  float:left;
+  margin: 0 1em;
+}
+
+.nav-item a {
+  display:block;
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-item:hover a {
+  color: #333;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  margin: 0 0 0 400px;
+}
+
+.post {
+   width: 200px;
+   height: 300px;
+   background-color: #111;
+   padding: 60px;
+   margin: 30px;
+   float: left;
+   overflow: hidden;
+}
